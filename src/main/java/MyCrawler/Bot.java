@@ -33,9 +33,10 @@ public class Bot {
         Elements elements = doc.select("a");
 
         for (Element e: elements) {
+            String name = e.text();
             String href = e.attr("href");
             href = processLink(href, url);
-            System.out.println(href);
+            System.out.println(href + " -- " + name);
         }
         System.out.println(processLink("../", url));
 
@@ -75,8 +76,8 @@ public class Bot {
             u = new URL(url);
 
             URLConnection conn = u.openConnection();
-            conn.setRequestProperty("User-Agent", "BBot/1.0");
-            conn.setRequestProperty("Accept-Charset", "UTF-8");
+         //   conn.setRequestProperty("User-Agent", "BBot/1.0");
+          //  conn.setRequestProperty("Accept-Charset", "UTF-8");
 
             InputStream is = conn.getInputStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(is));

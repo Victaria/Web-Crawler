@@ -8,6 +8,5 @@ public class Main {
 
         Bot bot = new Bot(start_url);
         bot.start();
-
     }
 }
