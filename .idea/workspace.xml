@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/site.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="library update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyCrawler/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyCrawler/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/BasicWebCrawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BasicWebCrawler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Extractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extractor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MyCrawler/Bot.class" beforeDir="false" />
@@ -78,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="Application.site">
     <configuration name="BasicWebCrawler" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BasicWebCrawler" />
       <module name="Web-Crawler" />
@@ -100,10 +95,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="site" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="site" />
+      <module name="Web-Crawler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.BasicWebCrawler" />
       <item itemvalue="Application.Exctractor" />
       <item itemvalue="Application.main" />
+      <item itemvalue="Application.site" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -130,6 +133,14 @@
       <workItem from="1572260722010" duration="1720000" />
       <workItem from="1572262573034" duration="1773000" />
     </task>
+    <task id="LOCAL-00001" summary="add branch library">
+      <created>1574187599442</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574187599442</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -137,5 +148,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add branch library" />
+    <MESSAGE value="library update" />
+    <option name="LAST_COMMIT_MESSAGE" value="library update" />
   </component>
 </project>
