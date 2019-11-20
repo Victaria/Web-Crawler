@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="library update">
+    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/site.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/site.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BasicWebCrawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BasicWebCrawler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Extractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extractor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyCrawler/Bot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyCrawler/Main.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574187599442</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="library update">
+      <created>1574196296818</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574196296818</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -148,6 +151,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add branch library" />

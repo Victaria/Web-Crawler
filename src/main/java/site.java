@@ -22,8 +22,8 @@ public class site {
          */
         String start_url = "https://www.travelontoast.de/tokio-tipps-sehenswuerdigkeiten/";
         int type = 0;
-        Bot analyse = new Bot(start_url, type);
-        analyse.start();
+        site analyse = new site();
+        analyse.analyse(start_url, type);
     }
 
     private void analyse(String url, int type){
