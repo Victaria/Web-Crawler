@@ -8,7 +8,10 @@ public class Main {
         Bot bot = new Bot(start_url);
         bot.start();
 
-        //
+        //listing depth of USl's
+        BasicWebCrawler bwc = new BasicWebCrawler();
+        bwc.start();
+
 
     }
 }

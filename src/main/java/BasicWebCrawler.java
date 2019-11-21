@@ -14,6 +14,11 @@ public class BasicWebCrawler {
         links = new HashSet<String>();
     }
 
+    public void start(){
+        //getPageLinks();
+    }
+
+
     public void getPageLinks(String URL, int depth) {
         if ((!links.contains(URL) && (depth < MAX_DEPTH))) {
             System.out.println(">> Depth: " + depth + " [" + URL + "]");
@@ -34,6 +39,6 @@ public class BasicWebCrawler {
     }
 
     public static void main(String[] args) {
-        new BasicWebCrawler().getPageLinks("http://www.mkyong.com/", 0);
+        new BasicWebCrawler().getPageLinks("https://www.travelontoast.de", 0);
     }
 }

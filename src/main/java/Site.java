@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class site {
+public class Site {
     public static void main(String[] args){
         /*choose site to collect data from extractor
         //type of sites:
@@ -22,7 +22,7 @@ public class site {
          */
         String start_url = "https://www.travelontoast.de/tokio-tipps-sehenswuerdigkeiten/";
         int type = 0;
-        site analyse = new site();
+        Site analyse = new Site();
         analyse.analyse(start_url, type);
     }
 

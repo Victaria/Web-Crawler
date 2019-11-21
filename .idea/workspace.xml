@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="" />
+    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicWebCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicWebCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/site.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Site.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="Application.Exctractor">
     <configuration name="BasicWebCrawler" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BasicWebCrawler" />
       <module name="Web-Crawler" />
@@ -81,15 +87,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application">
+    <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Web-Crawler" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="site" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="site" />
+    <configuration name="Site" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Site" />
       <module name="Web-Crawler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,8 +104,8 @@
     <list>
       <item itemvalue="Application.BasicWebCrawler" />
       <item itemvalue="Application.Exctractor" />
-      <item itemvalue="Application.main" />
-      <item itemvalue="Application.site" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Site" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -154,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574375496967</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rename branch beta&#10;-beta is for programming&#10;-alpha is for release working versions">
+      <created>1574375516646</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574375516646</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
