@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574260877101</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="rename branch beta&#10;-beta is for programming&#10;-alpha is for release working versions">
+      <created>1574375496966</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574375496967</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -174,6 +179,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add branch library" />
     <MESSAGE value="library update" />
-    <option name="LAST_COMMIT_MESSAGE" value="library update" />
+    <MESSAGE value="rename branch beta&#10;-beta is for programming&#10;-alpha is for release working versions" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename branch beta&#10;-beta is for programming&#10;-alpha is for release working versions" />
   </component>
 </project>
