@@ -20,45 +20,89 @@ public class Site {
         Shop:blog:referal link
         blog:blog:txt,pics,comment field ----to analyze
          */
-        String start_url = "https://www.travelontoast.de/tokio-tipps-sehenswuerdigkeiten/";
+        String start_url = "https://www.travelontoast.de/tokio-tipps-sehenswuerdigkeiten/#Tokio_Tipps_zur_Reiseplanung";
         int type = 0;
         Site analyse = new Site();
-        analyse.analyse(start_url, type);
+        analyse.analyse(start_url);
     }
 
-    private void analyse(String url, int type){
+    private void analyse(String url){
 
+        if (url.contains("category")){
+            //TODO is a overview site
+        }else{
+            //TODO is it not
+        }
 
         String html = getHTML(url);
         Document doc = Jsoup.parse(html);
-        Elements el = doc.select("img");
 
+        //count the number of page pics
+        Elements img = doc.select("img");
         int countpics = 0;
-        for (Element e: el){
+        for (Element e: img){
             countpics++;
-            System.out.println(countpics);
+        }
+        System.out.println("countpics" + countpics);
+
+        //count number of article
+        Elements article = doc.select("article");
+        int countart = 0;
+        for (Element e: article){
+            countart++;
         }
 
-
+        //count
         //When The Site is the Home Site
-        if (type == 0){
+
             //TODO save newest posts
-        }
+
 
         //When the Site is individual Site
-        if (type == 1){
+
             //TODO number word and pics
-        }
+
 
         //When the Site is post overview like home site
-        if (type == 2){
+
             //TODO save number posts, comments
-        }
+
 
         //When the Site is a post
-        if (type == 3){
+
             //TODO number of words per title, pics, comments
+
+        //count words
+        Elements p = doc.select("h1");
+        int countp = 0;
+        for (Element e: article){
+            countp++;
         }
+        System.out.println("countp" + countp);
+
+        Elements h1 = doc.select("h1");
+        int counth1 = 0;
+        for (Element e: article){
+            counth1++;
+        }
+        Elements h2 = doc.select("h2");
+        int counth2 = 0;
+        for (Element e: article){
+            counth2++;
+        }
+        Elements h3 = doc.select("h3");
+        int counth3 = 0;
+        for (Element e: article){
+            counth2++;
+        }
+
+        //count comment
+        Elements comment = doc.getElementsByClass("comments");
+        int countcomment = 0;
+        for (Element e: comment){
+            countcomment++;
+        }
+        System.out.println("countcomment" + countcomment);
     }
 
     private String getHTML(String url) {
