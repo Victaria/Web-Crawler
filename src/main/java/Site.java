@@ -1,41 +1,47 @@
+import helper.getHTML;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
+import java.io.*;
 
 public class Site {
-    public static void main(String[] args){
-        /*choose site to collect data from extractor
-        //type of sites:
-        Startseite: overview newest posts
-        over this blog: generic
-        Reiseziele->country: categorized posts
-        Reisearten->type: categorized posts
-        Shop:blog:referal link
-        blog:blog:txt,pics,comment field ----to analyze
-         */
+    public static void main(String[] args) throws IOException {
+        //test function
         String start_url = "https://www.travelontoast.de/tokio-tipps-sehenswuerdigkeiten/#Tokio_Tipps_zur_Reiseplanung";
-        int type = 0;
         Site analyse = new Site();
-        analyse.analyse(start_url);
+        analyse.analyse(start_url, 1, "data.xls");
     }
 
-    private void analyse(String url){
+    private void analyse(String url, int index, String sheetname) throws IOException {
+        //get html
+        String html = getHTML.getHTML(url);
+        Document doc = Jsoup.parse(html);
 
+        //access excel
+        FileInputStream is = new FileInputStream(sheetname);
+        HSSFWorkbook workbook = new HSSFWorkbook(is);
+        HSSFSheet sheet = workbook.getSheetAt(0);
+        Cell cell;
+        Row row;
+        row = sheet.createRow(index);
+
+        //set Url in Excel
+        cell = row.createCell(0, CellType.STRING);
+        cell.setCellValue(url);
+
+        //decide is a overview site
         if (url.contains("category")){
             //TODO is a overview site
         }else{
             //TODO is it not
         }
-
-        String html = getHTML(url);
-        Document doc = Jsoup.parse(html);
 
         //count the number of page pics
         Elements img = doc.select("img");
@@ -43,7 +49,8 @@ public class Site {
         for (Element e: img){
             countpics++;
         }
-        System.out.println("countpics" + countpics);
+        cell = row.createCell(1, CellType.NUMERIC);
+        cell.setCellValue(countpics);
 
         //count number of article
         Elements article = doc.select("article");
@@ -52,49 +59,39 @@ public class Site {
             countart++;
         }
 
-        //count
-        //When The Site is the Home Site
-
-            //TODO save newest posts
-
-
-        //When the Site is individual Site
-
-            //TODO number word and pics
-
-
-        //When the Site is post overview like home site
-
-            //TODO save number posts, comments
-
-
-        //When the Site is a post
-
-            //TODO number of words per title, pics, comments
-
         //count words
-        Elements p = doc.select("h1");
+        Elements p = doc.select("p");
         int countp = 0;
-        for (Element e: article){
+        for (Element e: p){
             countp++;
         }
-        System.out.println("countp" + countp);
+        cell = row.createCell(2, CellType.NUMERIC);
+        cell.setCellValue(countp);
 
+        //titles
         Elements h1 = doc.select("h1");
         int counth1 = 0;
-        for (Element e: article){
+        for (Element e: h1){
             counth1++;
         }
+        cell = row.createCell(3, CellType.NUMERIC);
+        cell.setCellValue(counth1);
+
         Elements h2 = doc.select("h2");
         int counth2 = 0;
-        for (Element e: article){
+        for (Element e: h2){
             counth2++;
         }
+        cell = row.createCell(4, CellType.NUMERIC);
+        cell.setCellValue(counth2);
+
         Elements h3 = doc.select("h3");
         int counth3 = 0;
-        for (Element e: article){
+        for (Element e: h3){
             counth2++;
         }
+        cell = row.createCell(5, CellType.NUMERIC);
+        cell.setCellValue(counth3);
 
         //count comment
         Elements comment = doc.getElementsByClass("comments");
@@ -102,33 +99,19 @@ public class Site {
         for (Element e: comment){
             countcomment++;
         }
-        System.out.println("countcomment" + countcomment);
-    }
+        cell = row.createCell(6, CellType.NUMERIC);
+        cell.setCellValue(countcomment);
 
-    private String getHTML(String url) {
 
-        URL u;
-        try {
-            u = new URL(url);
+        // write out
+        File file = new File(sheetname);
+        //file.getParentFile().mkdirs();
 
-            URLConnection conn = u.openConnection();
-            //   conn.setRequestProperty("User-Agent", "BBot/1.0");
-            //  conn.setRequestProperty("Accept-Charset", "UTF-8");
+        FileOutputStream outFile = new FileOutputStream(file);
+        workbook.write(outFile);
+        System.out.println("file: " + file.getAbsolutePath());
 
-            InputStream is = conn.getInputStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
-
-            String line;
-            String html = "";
-            while ((line = reader.readLine()) != null) {
-                html += line + "\n";
-            }
-            html = html.trim();
-
-            return html;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
+        //cleaning
+        is.close();
     }
 }
