@@ -1,6 +1,4 @@
 import helper.prepairExcel;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import java.io.IOException;
 
@@ -10,15 +8,18 @@ public class Main {
 
         //prepare excel access
         prepairExcel.prepairExcel();
-        //listing all URL`s
+
+        //site, who there crawler should work
         String start_url = "https://www.travelontoast.de/";
 
+        //listing all URL`s
         Bot bot = new Bot(start_url);
         bot.start();
 
-        //listing depth of USl's
+        //listing depth of URL`s
         BasicWebCrawler bwc = new BasicWebCrawler();
         bwc.start();
 
+        System.out.println("finish");
     }
 }

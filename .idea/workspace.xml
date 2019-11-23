@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helper/getHTML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helper/prepairExcel.java" afterDir="false" />
+    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="integrate Microsoft Excel framework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Site.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Site.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/getHTML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Site.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/prepairExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/prepairExcel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/site.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/site.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/site.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Site">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="BasicWebCrawler" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BasicWebCrawler" />
       <module name="Web-Crawler" />
@@ -115,7 +112,7 @@
       </method>
     </configuration>
     <configuration name="Site" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Site" />
+      <option name="MAIN_CLASS_NAME" value="crawler" />
       <module name="Web-Crawler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,7 +156,7 @@
       <workItem from="1572162013211" duration="4812000" />
       <workItem from="1572260722010" duration="1720000" />
       <workItem from="1572262573034" duration="1773000" />
-      <workItem from="1574547246258" duration="4227000" />
+      <workItem from="1574547246258" duration="4929000" />
     </task>
     <task id="LOCAL-00001" summary="add branch library">
       <created>1574187599442</created>
@@ -203,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574545214704</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="integrate Microsoft Excel framework">
+      <created>1574551652551</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574551652551</updated>
+    </task>
+    <task id="LOCAL-00008" summary="integrate Microsoft Excel framework">
+      <created>1574551682788</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574551682788</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +239,7 @@
     <MESSAGE value="library update" />
     <MESSAGE value="rename branch beta&#10;-beta is for programming&#10;-alpha is for release working versions" />
     <MESSAGE value="add Microsoft Excel framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Microsoft Excel framework" />
+    <MESSAGE value="integrate Microsoft Excel framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrate Microsoft Excel framework" />
   </component>
 </project>

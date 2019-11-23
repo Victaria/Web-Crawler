@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class prepairExcel {
 
-    public prepairExcel() throws IOException {
+    public static void prepairExcel() throws IOException {
         //create Excel
         HSSFWorkbook workbook = new HSSFWorkbook();
         //create sheet
