@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test" />
+        <entry key="$PROJECT_DIR$" value="beta" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -153,7 +152,7 @@
       <workItem from="1572262573034" duration="1773000" />
       <workItem from="1574547246258" duration="5174000" />
       <workItem from="1574611052785" duration="1944000" />
-      <workItem from="1574618440384" duration="972000" />
+      <workItem from="1574618440384" duration="1820000" />
     </task>
     <task id="LOCAL-00001" summary="add branch library">
       <created>1574187599442</created>
@@ -218,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574552416879</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="import webdriver">
+      <created>1574620441225</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1574620441225</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +251,7 @@
     <MESSAGE value="add Microsoft Excel framework" />
     <MESSAGE value="integrate Microsoft Excel framework" />
     <MESSAGE value="cleaning" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaning" />
+    <MESSAGE value="import webdriver" />
+    <option name="LAST_COMMIT_MESSAGE" value="import webdriver" />
   </component>
 </project>
