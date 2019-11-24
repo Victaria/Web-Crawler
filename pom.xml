@@ -37,6 +37,13 @@
             <artifactId>poi-ooxml</artifactId>
             <version>4.1.1</version>
         </dependency>
+        <dependency>
+            <!--https://search.maven.org/artifact/org.seleniumhq.webdriver/webdriver-selenium/0.9.7376/jar-->
+            <groupId>org.seleniumhq.webdriver</groupId>
+            <artifactId>webdriver-selenium</artifactId>
+            <version>0.9.7376</version>
+        </dependency>
+
 
     </dependencies>
 
