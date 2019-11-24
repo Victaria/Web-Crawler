@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
+    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="add alpha">
+      <change afterPath="$PROJECT_DIR$/src/main/java/webdriver/ChromeDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webdriver/chrome_crawler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webdriver/webdriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webdriver/webdriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,12 +51,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.33227175" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="webdriver" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Disk_D\WebCrawler\src" />
     </key>
@@ -112,6 +119,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="chrome_crawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="webdriver.chrome_crawler" />
+      <module name="Web-Crawler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webdriver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.BasicWebCrawler" />
       <item itemvalue="Application.Exctractor" />
@@ -119,9 +139,11 @@
       <item itemvalue="Application.Site" />
       <item itemvalue="Application.CreateExcelDemo" />
       <item itemvalue="Application.ReadExcelDemo" />
+      <item itemvalue="Application.chrome_crawler" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.chrome_crawler" />
         <item itemvalue="Application.ReadExcelDemo" />
         <item itemvalue="Application.CreateExcelDemo" />
       </list>
@@ -152,7 +174,7 @@
       <workItem from="1572262573034" duration="1773000" />
       <workItem from="1574547246258" duration="5174000" />
       <workItem from="1574611052785" duration="1944000" />
-      <workItem from="1574618440384" duration="1820000" />
+      <workItem from="1574618440384" duration="4475000" />
     </task>
     <task id="LOCAL-00001" summary="add branch library">
       <created>1574187599442</created>
@@ -224,7 +246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574620441225</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add alpha">
+      <created>1574621395109</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574621395109</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add testing for webdriver">
+      <created>1574623667729</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1574623667729</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +288,8 @@
     <MESSAGE value="integrate Microsoft Excel framework" />
     <MESSAGE value="cleaning" />
     <MESSAGE value="import webdriver" />
-    <option name="LAST_COMMIT_MESSAGE" value="import webdriver" />
+    <MESSAGE value="add alpha" />
+    <MESSAGE value="add testing for webdriver" />
+    <option name="LAST_COMMIT_MESSAGE" value="add testing for webdriver" />
   </component>
 </project>
