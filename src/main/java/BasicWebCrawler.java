@@ -9,18 +9,24 @@ import java.util.HashSet;
 public class BasicWebCrawler {
     private static final int MAX_DEPTH = 2;
     private HashSet<String> links;
+    private int i = 0;
+
+    public static void main(String[] args) {
+        new BasicWebCrawler().getPageLinks("https://www.travelontoast.de", 0);
+    }
 
     public BasicWebCrawler() {
         links = new HashSet<String>();
     }
 
-    public void start(){
-        //getPageLinks();
+    public void start(String URL, int depth){
+        getPageLinks(URL, depth);
     }
 
 
     public void getPageLinks(String URL, int depth) {
-        if ((!links.contains(URL) && (depth < MAX_DEPTH))) {
+        i++;
+        if ((!links.contains(URL) && (depth <= MAX_DEPTH))) {
             System.out.println(">> Depth: " + depth + " [" + URL + "]");
             try {
                 links.add(URL);
@@ -36,9 +42,6 @@ public class BasicWebCrawler {
                 System.err.println("For '" + URL + "': " + e.getMessage());
             }
         }
-    }
-
-    public static void main(String[] args) {
-        new BasicWebCrawler().getPageLinks("https://www.travelontoast.de", 0);
+        System.out.println("number of iterations: " + i);
     }
 }

@@ -11,15 +11,10 @@ public class Main {
 
         //site, who there crawler should work
         String start_url = "https://www.travelontoast.de/";
+        int depth = 0;
+        new crawl().crawl(start_url, start_url, depth);
+        //listing depth of URL`s on site
 
-        //listing all URL`s
-        Bot bot = new Bot(start_url);
-        bot.start();
-
-        //listing depth of URL`s
-        BasicWebCrawler bwc = new BasicWebCrawler();
-        bwc.start();
-
-        System.out.println("finish");
+        System.out.println("done");
     }
 }

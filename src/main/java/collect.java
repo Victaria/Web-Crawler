@@ -11,11 +11,11 @@ import org.jsoup.select.Elements;
 
 import java.io.*;
 
-public class crawler {
+public class collect {
     public static void main(String[] args) throws IOException {
         //test function
         String start_url = "https://www.travelontoast.de/tokio-tipps-sehenswuerdigkeiten/#Tokio_Tipps_zur_Reiseplanung";
-        crawler analyse = new crawler();
+        collect analyse = new collect();
         analyse.analyse(start_url, 1, "data.xls");
     }
 

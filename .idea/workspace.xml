@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="add alpha">
-      <change afterPath="$PROJECT_DIR$/src/main/java/webdriver/ChromeDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webdriver/chrome_crawler.java" afterDir="false" />
+    <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Java8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/crawl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webdriver/webdriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webdriver/webdriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicWebCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicWebCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BasicWebCrawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BasicWebCrawler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Extractor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extractor.class" afterDir="false" />
+    </list>
+    <list id="7514725e-48fb-412a-bacf-4a9358990397" name="error" comment="">
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,7 +121,7 @@
       </method>
     </configuration>
     <configuration name="Site" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="crawler" />
+      <option name="MAIN_CLASS_NAME" value="collect" />
       <module name="Web-Crawler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,6 +173,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="" />
+      <changelist id="7514725e-48fb-412a-bacf-4a9358990397" name="error" comment="" />
       <created>1572162009781</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -174,7 +183,8 @@
       <workItem from="1572262573034" duration="1773000" />
       <workItem from="1574547246258" duration="5174000" />
       <workItem from="1574611052785" duration="1944000" />
-      <workItem from="1574618440384" duration="4475000" />
+      <workItem from="1574618440384" duration="4711000" />
+      <workItem from="1574789460698" duration="7644000" />
     </task>
     <task id="LOCAL-00001" summary="add branch library">
       <created>1574187599442</created>
@@ -260,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574623667729</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add alpha">
+      <created>1574624507740</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1574624507740</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,8 +305,8 @@
     <MESSAGE value="integrate Microsoft Excel framework" />
     <MESSAGE value="cleaning" />
     <MESSAGE value="import webdriver" />
-    <MESSAGE value="add alpha" />
     <MESSAGE value="add testing for webdriver" />
-    <option name="LAST_COMMIT_MESSAGE" value="add testing for webdriver" />
+    <MESSAGE value="add alpha" />
+    <option name="LAST_COMMIT_MESSAGE" value="add alpha" />
   </component>
 </project>

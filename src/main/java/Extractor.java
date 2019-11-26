@@ -14,6 +14,13 @@ public class Extractor {
     private HashSet<String> links;
     private List<List<String>> articles;
 
+    public static void main(String[] args) {
+        Extractor bwc = new Extractor();
+        bwc.getPageLinks("http://www.mkyong.com");
+        bwc.getArticles();
+        bwc.writeToFile("Java8.txt");
+    }
+
     public Extractor() {
         links = new HashSet<>();
         articles = new ArrayList<>();
@@ -84,12 +91,5 @@ public class Extractor {
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
-    }
-
-    public static void main(String[] args) {
-        Extractor bwc = new Extractor();
-        bwc.getPageLinks("http://www.mkyong.com");
-        bwc.getArticles();
-        bwc.writeToFile("Java8");
     }
 }
