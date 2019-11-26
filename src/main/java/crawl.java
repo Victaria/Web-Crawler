@@ -5,12 +5,11 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.regex.Pattern;
 
 public class crawl {
     private int iteration = 0;
-    HashSet links = new HashSet<String>();
-    int MAX_DEPTH = 20000;
+    private HashSet<String> links = new HashSet<String>();
+    private int MAX_DEPTH = 50000;
 
     public void main(String[] args) {
 
@@ -23,17 +22,18 @@ public class crawl {
 //recursive crawler
     public void crawl(String site, String url, int depth){
         if (url.endsWith(".jpg") || url.endsWith(".png") || url.endsWith("#") || url.contains("wp-content") || url.endsWith("pdf")){
-            //excluded
+            //System.out.println("excluded, depth: " + depth + " " + url);
         }else {
-            if(url.contains(site) && depth <= MAX_DEPTH && !links.contains(url) && !url.contains("#")
-                    &&!url.contains("img_") && url.matches("//d")){
+            if(url.contains(site) && !links.contains(url) && !url.contains("#")
+                    && !url.contains("img_") && !url.contains("page") && !url.contains("tag")
+                    && !(url.matches("0-9" + "/"))    ){
 
-                System.out.println(">> Depth: " + depth + " [" + url + "] " + iteration++);
+                //System.out.println(">> Depth: " + depth + " [" + url + "] " + iteration++);
                 try {
                     links.add(url);
 
-                    if (url.contains("#"))
-                        System.out.println("#");
+                    if (depth >= MAX_DEPTH)
+                        System.err.println("---------------------> ERROR MAX_DEPTH");
 
                     Document document = Jsoup.connect(url).get();
                     Elements linksOnPage = document.select("a[href]");
@@ -44,10 +44,8 @@ public class crawl {
 
                 }catch (IOException e) {
                     //e.printStackTrace();
-                    System.err.println("For '" + url + "': " + e.getMessage());
+                    //System.err.println("For '" + url + "': " + e.getMessage());
                 }
-                }else {
-                    //System.out.println("excluded, depth: " + depth + " " + url);
             }
         }
     }

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/crawl_iterative.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/crawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl.java" afterDir="false" />
     </list>
     <list id="7514725e-48fb-412a-bacf-4a9358990397" name="error" comment="">
@@ -76,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.crawl_iterative">
     <configuration name="BasicWebCrawler" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="BasicWebCrawler" />
       <module name="Web-Crawler" />
@@ -132,6 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="crawl_iterative" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="crawl_iterative" />
+      <module name="Web-Crawler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.BasicWebCrawler" />
       <item itemvalue="Application.Exctractor" />
@@ -140,9 +149,11 @@
       <item itemvalue="Application.CreateExcelDemo" />
       <item itemvalue="Application.ReadExcelDemo" />
       <item itemvalue="Application.chrome_crawler" />
+      <item itemvalue="Application.crawl_iterative" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.crawl_iterative" />
         <item itemvalue="Application.chrome_crawler" />
         <item itemvalue="Application.ReadExcelDemo" />
         <item itemvalue="Application.CreateExcelDemo" />
@@ -176,7 +187,7 @@
       <workItem from="1574547246258" duration="5174000" />
       <workItem from="1574611052785" duration="1944000" />
       <workItem from="1574618440384" duration="4711000" />
-      <workItem from="1574789460698" duration="11980000" />
+      <workItem from="1574789460698" duration="17218000" />
     </task>
     <task id="LOCAL-00001" summary="add branch library">
       <created>1574187599442</created>
@@ -276,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574798919195</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="upgrade crawler">
+      <created>1574803462565</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1574803462565</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +325,7 @@
     <MESSAGE value="add testing for webdriver" />
     <MESSAGE value="add alpha" />
     <MESSAGE value="add better crawler" />
-    <option name="LAST_COMMIT_MESSAGE" value="add better crawler" />
+    <MESSAGE value="upgrade crawler" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade crawler" />
   </component>
 </project>
