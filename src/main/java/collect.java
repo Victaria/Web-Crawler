@@ -110,7 +110,7 @@ public class collect {
         FileOutputStream outFile = new FileOutputStream(file);
         workbook.write(outFile);
         //System.out.println("file: " + file.getAbsolutePath());
-
+        System.out.println(url + index);
         //cleaning
         is.close();
     }

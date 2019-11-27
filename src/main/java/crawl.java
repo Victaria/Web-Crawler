@@ -41,7 +41,8 @@ public class crawl {
                     && !(url.matches("0-9" + "/"))){
                 //add to url list
                 links.add(url);
-                //System.out.println(">> Depth: " + depth + " [" + url + "] " + iteration++);
+                iteration++;
+                //System.out.println(">> Depth: " + depth + " [" + url + "] ");
                 try {
 
                     //verarbeiten
