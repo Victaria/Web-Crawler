@@ -3,9 +3,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.IOException;
 import java.util.HashSet;
-import java.util.Iterator;
 
 public class crawl_iterative {
     private int iteration = 0;
@@ -21,7 +19,19 @@ public class crawl_iterative {
 
     public crawl_iterative(String site, String url, int depth){
         try {
+            Document document = Jsoup.connect(site).get();
+            Elements linksOnPage = document.select("a[href]");
 
+            for (Element page : linksOnPage){
+
+                if (url.contains(site)){
+                    System.err.println("same");
+                }else {
+                    System.out.println(">> Depth: " + depth + " [" + url + "] " + iteration++);
+                    Document doc = Jsoup.connect(url).get();
+                    linksOnPage = document.select("a[href]");
+                }
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

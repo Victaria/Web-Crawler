@@ -19,18 +19,34 @@ public class crawl {
         crawl(site, url, depth);
     }
 
-//recursive crawler
-    public void crawl(String site, String url, int depth){
-        if (url.endsWith(".jpg") || url.endsWith(".png") || url.endsWith("#") || url.contains("wp-content") || url.endsWith("pdf")){
-            //System.out.println("excluded, depth: " + depth + " " + url);
-        }else {
-            if(url.contains(site) && !links.contains(url) && !url.contains("#")
-                    && !url.contains("img_") && !url.contains("page") && !url.contains("tag")
-                    && !(url.matches("0-9" + "/"))    ){
+    public crawl(String site, String url, int depth){
+        crawl(site,url,depth);
+    }
 
+    //recursive crawler
+    public void crawl(String site, String url, int depth){
+        if (url.endsWith(".jpg")
+                || url.endsWith(".png")
+                || url.endsWith("#")
+                || url.contains("wp-content")
+                || url.endsWith("pdf")){
+            //System.out.println("excluded, depth: " + depth + " " + url);
+        } else {
+            if(url.contains(site)
+                    && !links.contains(url)
+                    && !url.contains("#")
+                    && !url.contains("img_")
+                    && !url.contains("page")
+                    && !url.contains("tag")
+                    && !(url.matches("0-9" + "/"))){
+                //add to url list
+                links.add(url);
                 //System.out.println(">> Depth: " + depth + " [" + url + "] " + iteration++);
                 try {
-                    links.add(url);
+
+                    //verarbeiten
+                    collect analyse = new collect();
+                    analyse.analyse(url, iteration, "data.xls");
 
                     if (depth >= MAX_DEPTH)
                         System.err.println("---------------------> ERROR MAX_DEPTH");

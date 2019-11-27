@@ -19,7 +19,7 @@ public class collect {
         analyse.analyse(start_url, 1, "data.xls");
     }
 
-    private void analyse(String url, int index, String sheetname) throws IOException {
+    void analyse(String url, int index, String sheetname) throws IOException {
         //get html
         String html = getHTML.getHTML(url);
         Document doc = Jsoup.parse(html);
@@ -109,7 +109,7 @@ public class collect {
 
         FileOutputStream outFile = new FileOutputStream(file);
         workbook.write(outFile);
-        System.out.println("file: " + file.getAbsolutePath());
+        //System.out.println("file: " + file.getAbsolutePath());
 
         //cleaning
         is.close();
