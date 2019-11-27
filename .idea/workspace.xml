@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java8.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/collect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/crawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/prepairExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/prepairExcel.java" afterDir="false" />
     </list>
     <list id="7514725e-48fb-412a-bacf-4a9358990397" name="error" comment="">
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
@@ -187,7 +189,8 @@
       <workItem from="1574611052785" duration="1944000" />
       <workItem from="1574618440384" duration="4711000" />
       <workItem from="1574789460698" duration="19832000" />
-      <workItem from="1574811108792" duration="2045000" />
+      <workItem from="1574811108792" duration="2680000" />
+      <workItem from="1574856216218" duration="4633000" />
     </task>
     <task id="LOCAL-00001" summary="add branch library">
       <created>1574187599442</created>
@@ -308,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574812897492</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="up">
+      <created>1574813176585</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1574813176585</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +352,7 @@
     <MESSAGE value="upgrade crawler" />
     <MESSAGE value="add iterative" />
     <MESSAGE value="repair and update" />
-    <option name="LAST_COMMIT_MESSAGE" value="repair and update" />
+    <MESSAGE value="up" />
+    <option name="LAST_COMMIT_MESSAGE" value="up" />
   </component>
 </project>

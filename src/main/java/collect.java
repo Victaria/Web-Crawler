@@ -31,17 +31,11 @@ public class collect {
         Cell cell;
         Row row;
         row = sheet.createRow(index);
+        int i = 0;
 
         //set Url in Excel
-        cell = row.createCell(0, CellType.STRING);
+        cell = row.createCell(i++, CellType.STRING);
         cell.setCellValue(url);
-
-        //decide is a overview site
-        if (url.contains("category")){
-            //TODO is a overview site
-        }else{
-            //TODO is it not
-        }
 
         //count the number of page pics
         Elements img = doc.select("img");
@@ -49,58 +43,87 @@ public class collect {
         for (Element e: img){
             countpics++;
         }
-        cell = row.createCell(1, CellType.NUMERIC);
+        cell = row.createCell(i++, CellType.NUMERIC);
         cell.setCellValue(countpics);
 
-        //count number of article
-        Elements article = doc.select("article");
-        int countart = 0;
-        for (Element e: article){
-            countart++;
-        }
 
-        //count words
+        //count texts
         Elements p = doc.select("p");
         int countp = 0;
         for (Element e: p){
             countp++;
         }
-        cell = row.createCell(2, CellType.NUMERIC);
+        cell = row.createCell(i++, CellType.NUMERIC);
         cell.setCellValue(countp);
 
-        //titles
+
+        //titles h1
         Elements h1 = doc.select("h1");
         int counth1 = 0;
         for (Element e: h1){
             counth1++;
         }
-        cell = row.createCell(3, CellType.NUMERIC);
+        cell = row.createCell(i++, CellType.NUMERIC);
         cell.setCellValue(counth1);
 
+        //titles h2
         Elements h2 = doc.select("h2");
         int counth2 = 0;
         for (Element e: h2){
             counth2++;
         }
-        cell = row.createCell(4, CellType.NUMERIC);
+        cell = row.createCell(i++, CellType.NUMERIC);
         cell.setCellValue(counth2);
 
+        //number of h3 titles
         Elements h3 = doc.select("h3");
         int counth3 = 0;
         for (Element e: h3){
             counth2++;
         }
-        cell = row.createCell(5, CellType.NUMERIC);
+        cell = row.createCell(i++, CellType.NUMERIC);
         cell.setCellValue(counth3);
 
-        //count comment
-        Elements comment = doc.getElementsByClass("comments");
-        int countcomment = 0;
-        for (Element e: comment){
-            countcomment++;
+
+        //have comments i=6
+        Elements comments = doc.getElementsByClass("comments");
+        int count_comments = 0;
+        for (Element e: comments){
+            count_comments++;
         }
-        cell = row.createCell(6, CellType.NUMERIC);
-        cell.setCellValue(countcomment);
+        cell = row.createCell(i++, CellType.NUMERIC);
+        cell.setCellValue(count_comments);
+
+        //number comments --- TODO try over children
+        Elements ul = doc.getElementsByClass("ul");
+        int comment = 0;
+        for (Element e: ul) {
+            for (Element t: ul.parents()) {
+                for (Element d: t.parents()) {
+                    if (d.toString().equals("comments")){
+                        comment++;
+                    }
+                }
+            }
+        }
+        cell = row.createCell(i++, CellType.NUMERIC);
+        cell.setCellValue(comment);
+
+
+        //split articles and category's , i=8
+        Elements article = doc.select("article");
+        int count_articles = 0;
+        for (Element e: article){
+            count_articles++;
+        }
+        cell = row.createCell(i++, CellType.NUMERIC);
+        cell.setCellValue(count_articles);
+
+                //decide is a overview site
+        if (!url.contains("category"))
+            //TODO collect text, because is a page
+            ;
+
 
 
         // write out
@@ -110,7 +133,7 @@ public class collect {
         FileOutputStream outFile = new FileOutputStream(file);
         workbook.write(outFile);
         //System.out.println("file: " + file.getAbsolutePath());
-        System.out.println(url + index);
+        System.out.println(url);
         //cleaning
         is.close();
     }

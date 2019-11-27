@@ -37,6 +37,14 @@ public class prepairExcel {
         cell.setCellValue("h2");
         cell = row.createCell(5, CellType.STRING);
         cell.setCellValue("h3");
+        cell = row.createCell(6, CellType.STRING);
+        cell.setCellValue("have comments");
+        cell = row.createCell(7, CellType.STRING);
+        cell.setCellValue("number of comments");
+        cell = row.createCell(8, CellType.STRING);
+        cell.setCellValue("number articles");
+        cell = row.createCell(9, CellType.STRING);
+        cell.setCellValue("TODO");
 
         // write out
         File file = new File("data.xls");
