@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/list.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl.java" afterDir="false" />
     </list>
-    <list id="7514725e-48fb-412a-bacf-4a9358990397" name="error" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -38,9 +41,17 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1TZryidX9DdTTrCjer20t8MQcl0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
@@ -63,18 +74,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Disk_D\WebCrawler\src" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="BasicWebCrawler" type="Application" factoryName="Application">
@@ -159,13 +158,15 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -174,7 +175,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="" />
-      <changelist id="7514725e-48fb-412a-bacf-4a9358990397" name="error" comment="" />
+      <changelist id="" name="error" comment="" />
       <created>1572162009781</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -188,6 +189,7 @@
       <workItem from="1574789460698" duration="19832000" />
       <workItem from="1574811108792" duration="2680000" />
       <workItem from="1574856216218" duration="5466000" />
+      <workItem from="1575402650642" duration="2881000" />
     </task>
     <task id="LOCAL-00001" summary="add branch library">
       <created>1574187599442</created>
@@ -322,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574861387435</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="del output">
+      <created>1575402749805</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1575402749805</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,32 +367,72 @@
     <MESSAGE value="repair and update" />
     <MESSAGE value="up" />
     <MESSAGE value="more data" />
-    <option name="LAST_COMMIT_MESSAGE" value="more data" />
+    <MESSAGE value="del output" />
+    <option name="LAST_COMMIT_MESSAGE" value="del output" />
   </component>
   <component name="WindowStateProjectService">
     <state x="803" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575402672122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="803" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575402672122" />
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1575402687273">
+    <state x="543" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575405438393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575402687273" />
-    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1575402687273">
+    <state x="543" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575405438393" />
+    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1575402749325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575402687273" />
-    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1575402687273">
+    <state x="583" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575402749325" />
+    <state width="1877" height="161" key="GridCell.Tab.0.bottom" timestamp="1575405460100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575402687273" />
-    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1575402687273">
+    <state width="1877" height="161" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575405460100" />
+    <state width="1877" height="161" key="GridCell.Tab.0.center" timestamp="1575405460100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575402687273" />
+    <state width="1877" height="161" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575405460100" />
+    <state width="1877" height="161" key="GridCell.Tab.0.left" timestamp="1575405460100">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="161" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575405460100" />
+    <state width="1877" height="161" key="GridCell.Tab.0.right" timestamp="1575405460100">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="161" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575405460100" />
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom" timestamp="1575404944277">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575404944277" />
+    <state width="1877" height="383" key="GridCell.Tab.1.center" timestamp="1575404944277">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575404944277" />
+    <state width="1877" height="383" key="GridCell.Tab.1.left" timestamp="1575404944277">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575404944277" />
+    <state width="1877" height="383" key="GridCell.Tab.1.right" timestamp="1575404944277">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575404944277" />
     <state x="807" y="428" key="VCS.ChangelistChooser" timestamp="1575402728455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="428" key="VCS.ChangelistChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575402728455" />
+    <state x="552" y="233" key="Vcs.Push.Dialog.v2" timestamp="1575402752735">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="233" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575402752735" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/crawl.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

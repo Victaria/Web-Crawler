@@ -3,28 +3,53 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class crawl {
     private int iteration = 0;
-    private HashSet<String> links = new HashSet<String>();
-    private int MAX_DEPTH = 50000;
+    public HashSet<String> links = new HashSet<String>();
+    private int MAX_DEPTH = 2;
 
+    //test function
     public void main(String[] args) {
 
         String site = "https://www.travelontoast.de/";
         String url = site;
         int depth = 0;
-        crawl(site, url, depth);
+        crawler(site, url, depth);
     }
+
 
     public crawl(String site, String url, int depth){
-        crawl(site,url,depth);
+        System.out.println("before crawl");
+        crawler(site, url, depth);
+
+        //output to file
+        try {
+            PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream("list.txt")));
+            {
+                Iterator hashSetI = links.iterator();
+                while (hashSetI.hasNext()) {
+                    String o = hashSetI.next().toString();
+                    writer.println(o.toString());
+                }
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println("list.txt created");
     }
 
+
+
     //recursive crawler
-    public void crawl(String site, String url, int depth){
+    // Filtering soll unwichige Seiten herausnehmen
+    // ungefähre Seitenanzahl: 1512
+    // Anzahl Iterationen über nützliche und nicht  nützliche Seiten:20.000
+
+    public void crawler(String site, String url, int depth){
         if (url.endsWith(".jpg")
                 || url.endsWith(".png")
                 || url.endsWith("#")
@@ -42,26 +67,32 @@ public class crawl {
                 //add to url list
                 links.add(url);
                 iteration++;
-                //System.out.println(">> Depth: " + depth + " [" + url + "] ");
-                try {
 
-                    //verarbeiten
-                    collect analyse = new collect();
-                    analyse.analyse(url, iteration, "data.xls");
+                //Zur Analyse
+                System.out.println(">> Depth: " + depth + " [" + url + "] ");
 
-                    if (depth >= MAX_DEPTH)
-                        System.err.println("---------------------> ERROR MAX_DEPTH");
+                //stopp in test mode
+                if (depth >= MAX_DEPTH)
+                    System.err.println("---------------------> ERROR MAX_DEPTH");
+                else {
+                    try {
 
-                    Document document = Jsoup.connect(url).get();
-                    Elements linksOnPage = document.select("a[href]");
+                        //live analysis - not work recursively
+                        //collect analyse = new collect();
+                        //analyse.analyse(url, iteration, "data.xls");
 
-                    for (Element page : linksOnPage) {
-                        crawl(site, page.attr("abs:href"), depth++);
+
+                        Document document = Jsoup.connect(url).get();
+                        Elements linksOnPage = document.select("a[href]");
+
+                        for (Element page : linksOnPage) {
+                            crawler(site, page.attr("abs:href"), depth++);
+                        }
+
+                    }catch (IOException e) {
+                        //e.printStackTrace();
+                        //System.err.println("For '" + url + "': " + e.getMessage());
                     }
-
-                }catch (IOException e) {
-                    //e.printStackTrace();
-                    //System.err.println("For '" + url + "': " + e.getMessage());
                 }
             }
         }
