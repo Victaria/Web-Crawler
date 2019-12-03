@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/crawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl.java" afterDir="false" />
     </list>
@@ -188,7 +187,7 @@
       <workItem from="1574789460698" duration="19832000" />
       <workItem from="1574811108792" duration="2680000" />
       <workItem from="1574856216218" duration="5466000" />
-      <workItem from="1575402650642" duration="4384000" />
+      <workItem from="1575402650642" duration="4625000" />
     </task>
     <task id="LOCAL-00001" summary="add branch library">
       <created>1574187599442</created>
@@ -337,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575405547014</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="up">
+      <created>1575407270490</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1575407270490</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,10 +377,10 @@
     <MESSAGE value="upgrade crawler" />
     <MESSAGE value="add iterative" />
     <MESSAGE value="repair and update" />
-    <MESSAGE value="up" />
     <MESSAGE value="more data" />
     <MESSAGE value="del output" />
-    <option name="LAST_COMMIT_MESSAGE" value="del output" />
+    <MESSAGE value="up" />
+    <option name="LAST_COMMIT_MESSAGE" value="up" />
   </component>
   <component name="WindowStateProjectService">
     <state x="737" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575405978590">
@@ -389,10 +395,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="543" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575405438393" />
-    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1575405546461">
+    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1575407270030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="583" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575405546461" />
+    <state x="583" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575407270030" />
     <state width="1877" height="161" key="GridCell.Tab.0.bottom" timestamp="1575407261091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -429,9 +435,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="428" key="VCS.ChangelistChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575402728455" />
-    <state x="552" y="233" key="Vcs.Push.Dialog.v2" timestamp="1575405548897">
+    <state x="552" y="233" key="Vcs.Push.Dialog.v2" timestamp="1575407273249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="233" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575405548897" />
+    <state x="552" y="233" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575407273249" />
   </component>
 </project>

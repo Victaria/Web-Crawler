@@ -1,2 +1,5 @@
 *.class
 /target/classes/META-INF/Web-Crawler.kotlin_module
+
+/list.txt
+/data.xls

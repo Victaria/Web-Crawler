@@ -4,6 +4,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -23,20 +25,23 @@ public class crawl {
 
 
     public crawl(String site, String url, int depth){
-        System.out.println("before crawl");
+
         crawler(site, url, depth);
 
+        System.out.println(links);
         //output to file
         try {
-            PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream("list.txt")));
+            PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream("list.txt"), "UTF-8"));
             {
-                Iterator hashSetI = links.iterator();
+
+                Iterator <String> hashSetI = links.iterator();
                 while (hashSetI.hasNext()) {
-                    String o = hashSetI.next().toString();
-                    writer.println(o.toString());
+                    //String o = hashSetI.next();
+                    writer.println(hashSetI.next());
+                    //System.out.println(o);
                 }
             }
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException | UnsupportedEncodingException e) {
             e.printStackTrace();
         }
         System.out.println("list.txt created");
@@ -68,8 +73,8 @@ public class crawl {
                 links.add(url);
                 iteration++;
 
-                //Zur Analyse
-                System.out.println(">> Depth: " + depth + " [" + url + "] ");
+                //For Analyses
+                //System.out.println(">> Depth: " + depth + " [" + url + "] ");
 
                 //stopp in test mode
                 if (depth >= MAX_DEPTH)
