@@ -10,10 +10,9 @@ public class Main {
         prepairExcel.prepairExcel();
 
         //site, who there crawler should work
-        String start_url = "https://www.travelontoast.de/";
-        int depth = 0;
-        new crawl(start_url, start_url, depth);
-        //new crawl_iterative(start_url, start_url, depth);
+        //crawl.test();
+
+        coll_list.test();
 
         System.out.println("done");
     }

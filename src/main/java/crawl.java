@@ -8,14 +8,16 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class crawl {
-    private int iteration = 0;
+    private static int iteration = 0;
     //private HashSet<String> lh = new HashSet<String>();
-    private ArrayList l = new ArrayList();
-    private int MAX_DEPTH = 50000;
+    private static ArrayList l = new ArrayList();
+    private static int MAX_DEPTH = 1;
+    private static boolean detector = false;
+
+    public void main(String[] args) {}
 
     //test function
-    public void main(String[] args) {
-
+    public static void test(){
         String site = "https://www.travelontoast.de/";
         String url = site;
         int depth = 0;
@@ -24,7 +26,6 @@ public class crawl {
 
 
     public crawl(String site, String url, int depth){
-
         crawler(site, url, depth);
 
         System.out.println("crawled URL´s: " + l.size());
@@ -61,7 +62,7 @@ public class crawl {
     // ungefähre Seitenanzahl: 1512
     // Anzahl Iterationen über nützliche und nicht  nützliche Seiten:20.000
 
-    public void crawler(String site, String url, int depth){
+    public static void crawler(String site, String url, int depth){
         if (url.endsWith(".jpg")
                 || url.endsWith(".png")
                 || url.endsWith("#")
@@ -84,13 +85,15 @@ public class crawl {
                 //System.out.println(">> Depth: " + depth + " [" + url + "] ");
 
                 //stopp in test mode
-                if (depth >= MAX_DEPTH ){
-                    System.err.println("---------------------> ERROR MAX_DEPTH REACHED");
-                    System.exit(-2);
+                if (depth >= MAX_DEPTH){
+                    if (detector == false){
+                        System.err.println("---------------------> ERROR MAX_DEPTH REACHED");
+                        detector = true;
+                    }
+                    //System.exit(-2);
                 }
                 else {
                     try {
-
                         //live analysis - not work recursively
                         //collect analyse = new collect();
                         //analyse.analyse(url, iteration, "data.xls");

@@ -11,11 +11,11 @@ import org.jsoup.select.Elements;
 
 import java.io.*;
 
-public class collect {
+public class coll_uniq {
     public static void main(String[] args) throws IOException {
         //test function
         String start_url = "https://www.travelontoast.de/tokio-tipps-sehenswuerdigkeiten/#Tokio_Tipps_zur_Reiseplanung";
-        collect analyse = new collect();
+        coll_uniq analyse = new coll_uniq();
         analyse.analyse(start_url, 1, "data.xls");
     }
 
@@ -124,6 +124,8 @@ public class collect {
             //TODO collect text, because is a page
             ;
 
+
+        //read date
 
 
         // write out
