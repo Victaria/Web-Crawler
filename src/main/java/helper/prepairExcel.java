@@ -16,7 +16,8 @@ public class prepairExcel {
         //create Excel
         HSSFWorkbook workbook = new HSSFWorkbook();
         //create sheet
-        HSSFSheet sheet = workbook.createSheet("data.xls");
+        HSSFSheet sheet = workbook.createSheet("all.xls");
+        HSSFSheet s2 = workbook.createSheet("p.xls");
 
         Cell cell;
         Row row;
@@ -38,13 +39,13 @@ public class prepairExcel {
         cell = row.createCell(5, CellType.STRING);
         cell.setCellValue("h3");
         cell = row.createCell(6, CellType.STRING);
-        cell.setCellValue("have comments");
+        cell.setCellValue("have comment field");
         cell = row.createCell(7, CellType.STRING);
         cell.setCellValue("number of comments");
         cell = row.createCell(8, CellType.STRING);
-        cell.setCellValue("number articles");
+        cell.setCellValue("number linked articles");
         cell = row.createCell(9, CellType.STRING);
-        cell.setCellValue("TODO");
+        cell.setCellValue("is a category");
 
         // write out
         File file = new File("data.xls");

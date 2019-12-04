@@ -11,7 +11,7 @@ public class crawl {
     private static int iteration = 0;
     //private HashSet<String> lh = new HashSet<String>();
     private static ArrayList l = new ArrayList();
-    private static int MAX_DEPTH = 1;
+    private static int MAX_DEPTH = 50000;
     private static boolean detector = false;
 
     public void main(String[] args) {}
@@ -21,14 +21,14 @@ public class crawl {
         String site = "https://www.travelontoast.de/";
         String url = site;
         int depth = 0;
-        crawler(site, url, depth);
+        new crawl(site, url, depth);
     }
 
 
     public crawl(String site, String url, int depth){
         crawler(site, url, depth);
 
-        System.out.println("crawled URL´s: " + l.size());
+        //System.out.println("crawled URL´s: " + l.size());
         //output to file
         try {
             PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream("list.txt"), StandardCharsets.UTF_8));
@@ -52,7 +52,7 @@ public class crawl {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println("list.txt created");
+        System.out.println("list.txt created: " + l.size());
     }
 
 

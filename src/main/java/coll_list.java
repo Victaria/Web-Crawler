@@ -107,46 +107,50 @@ public class coll_list{
 
                 //have comments §6
                 Elements comments = doc.getElementsByClass("comments");
-                int count_comments = 0;
+                Boolean c_comment = false;
                 for (Element e : comments) {
-                    count_comments++;
+                    c_comment = true;
                 }
-                cell = row.createCell(index++, CellType.NUMERIC);
-                cell.setCellValue(count_comments);
+                cell = row.createCell(index++, CellType.BOOLEAN);
+                cell.setCellValue(c_comment);
 
                 //number comments --- TODO try over children §7
-                Elements ul = doc.getElementsByClass("ul");
+                Elements c_ticker = doc.getElementsByClass("post-box-title");
                 int comment = 0;
-                for (Element e : ul) {
-                    for (Element t : ul.parents()) {
-                        for (Element d : t.parents()) {
-                            if (d.toString().equals("comments")) {
-                                comment++;
-                            }
+                for (Element e : c_ticker) {
+                    for (Element r : e.children()) {
+                        if (r.text().equals("Das könnte Dir auch gefallen")) {
+                            // nothing
+                        } else if (r.text().startsWith("keine")) {
+                            comment = 0;
+                        } else {
+                            String counter = r.text().replaceAll(" Kommentare", "");
+                            comment = Integer.parseInt(counter);
+                            //System.out.println(comment);
                         }
                     }
                 }
+
                 cell = row.createCell(index++, CellType.NUMERIC);
                 cell.setCellValue(comment);
 
 
-                //split articles and category's , i=8
+                //number of articles , $8
                 Elements article = doc.select("article");
                 int count_articles = 0;
-                for (Element e : article) {
+                for (Element d : article) {
                     count_articles++;
                 }
                 cell = row.createCell(index++, CellType.NUMERIC);
                 cell.setCellValue(count_articles);
 
-                //decide is a overview site
-                if (!url.contains("category"))
-                    //TODO collect text, because is a page
-                    ;
-
-                // TODO read date
-
-
+                //decide is a overview/ category site
+                cell = row.createCell(index++, CellType.BOOLEAN);
+                if (url.contains("category")) {
+                    cell.setCellValue(true);
+                } else {
+                    cell.setCellValue(false);
+                }
 
             } catch (Exception e) {
                 //e.printStackTrace();
