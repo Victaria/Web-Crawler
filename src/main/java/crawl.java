@@ -5,14 +5,14 @@ import org.jsoup.select.Elements;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 
 public class crawl {
     private int iteration = 0;
-    public HashSet<String> links = new HashSet<String>();
-    private int MAX_DEPTH = 2;
+    //private HashSet<String> lh = new HashSet<String>();
+    private ArrayList l = new ArrayList();
+    private int MAX_DEPTH = 50000;
 
     //test function
     public void main(String[] args) {
@@ -28,18 +28,29 @@ public class crawl {
 
         crawler(site, url, depth);
 
-        System.out.println(links);
+        System.out.println(l.size());
         //output to file
         try {
             PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream("list.txt"), "UTF-8"));
             {
 
-                Iterator <String> hashSetI = links.iterator();
-                while (hashSetI.hasNext()) {
-                    //String o = hashSetI.next();
-                    writer.println(hashSetI.next());
+                //write per iterator
+                Iterator <String> list = l.iterator();
+                while (list.hasNext()) {
+                    String o = list.next();
+                    writer.println(o);
+                    //writer.flush();
                     //System.out.println(o);
                 }
+
+                /*write per Index
+                for (int i = l.size() - 1; i > 0; i--){
+                    System.out.println(l.get(i));
+                    writer.println(l.get(i).toString());
+                }*/
+
+                //Important!
+                writer.close();
             }
         } catch (FileNotFoundException | UnsupportedEncodingException e) {
             e.printStackTrace();
@@ -63,14 +74,14 @@ public class crawl {
             //System.out.println("excluded, depth: " + depth + " " + url);
         } else {
             if(url.contains(site)
-                    && !links.contains(url)
+                    && !l.contains(url)
                     && !url.contains("#")
                     && !url.contains("img_")
                     && !url.contains("page")
                     && !url.contains("tag")
                     && !(url.matches("0-9" + "/"))){
                 //add to url list
-                links.add(url);
+                l.add(url);
                 iteration++;
 
                 //For Analyses
@@ -91,6 +102,7 @@ public class crawl {
                         Elements linksOnPage = document.select("a[href]");
 
                         for (Element page : linksOnPage) {
+                            if (page.attr("abs:href").startsWith(site))
                             crawler(site, page.attr("abs:href"), depth++);
                         }
 
