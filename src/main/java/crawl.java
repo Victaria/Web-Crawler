@@ -4,9 +4,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
 
 public class crawl {
     private int iteration = 0;
@@ -28,31 +27,28 @@ public class crawl {
 
         crawler(site, url, depth);
 
-        System.out.println(l.size());
+        System.out.println("crawled URL´s: " + l.size());
         //output to file
         try {
-            PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream("list.txt"), "UTF-8"));
+            PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream("list.txt"), StandardCharsets.UTF_8));
             {
 
-                //write per iterator
+                /*write per iterator
                 Iterator <String> list = l.iterator();
                 while (list.hasNext()) {
                     String o = list.next();
                     writer.println(o);
                     //writer.flush();
-                    //System.out.println(o);
-                }
-
-                /*write per Index
-                for (int i = l.size() - 1; i > 0; i--){
-                    System.out.println(l.get(i));
-                    writer.println(l.get(i).toString());
                 }*/
 
+                //write per Index
+                for (int i = l.size() - 1; i >= 0; i--){
+                    writer.println(l.get(i).toString());
+                }
                 //Important!
                 writer.close();
             }
-        } catch (FileNotFoundException | UnsupportedEncodingException e) {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
         System.out.println("list.txt created");
@@ -88,15 +84,16 @@ public class crawl {
                 //System.out.println(">> Depth: " + depth + " [" + url + "] ");
 
                 //stopp in test mode
-                if (depth >= MAX_DEPTH)
-                    System.err.println("---------------------> ERROR MAX_DEPTH");
+                if (depth >= MAX_DEPTH ){
+                    System.err.println("---------------------> ERROR MAX_DEPTH REACHED");
+                    System.exit(-2);
+                }
                 else {
                     try {
 
                         //live analysis - not work recursively
                         //collect analyse = new collect();
                         //analyse.analyse(url, iteration, "data.xls");
-
 
                         Document document = Jsoup.connect(url).get();
                         Elements linksOnPage = document.select("a[href]");
@@ -105,7 +102,6 @@ public class crawl {
                             if (page.attr("abs:href").startsWith(site))
                             crawler(site, page.attr("abs:href"), depth++);
                         }
-
                     }catch (IOException e) {
                         //e.printStackTrace();
                         //System.err.println("For '" + url + "': " + e.getMessage());
