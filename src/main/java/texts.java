@@ -68,7 +68,7 @@ public class texts {
                 cell = row.createCell(index, CellType.STRING);
                 cell.setCellValue("");
             } catch (Exception e) {
-                e.printStackTrace();
+                //e.printStackTrace();
             }
         }
             // write out
