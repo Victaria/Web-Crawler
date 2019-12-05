@@ -52,7 +52,7 @@ public class prepairExcel {
         cell = row.createCell(0, CellType.STRING);
         cell.setCellValue("URL");
 
-        for (int i = 1; i <= 200; i++){
+        for (int i = 1; i <= 132; i++){
             cell = row.createCell(i, CellType.STRING);
             cell.setCellValue("p" + i);
         }
