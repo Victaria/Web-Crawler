@@ -47,6 +47,16 @@ public class prepairExcel {
         cell = row.createCell(9, CellType.STRING);
         cell.setCellValue("is a category");
 
+        //texts
+        row = s2.createRow(0);
+        cell = row.createCell(0, CellType.STRING);
+        cell.setCellValue("URL");
+
+        for (int i = 1; i <= 200; i++){
+            cell = row.createCell(i, CellType.STRING);
+            cell.setCellValue("p" + i);
+        }
+
         // write out
         File file = new File("data.xls");
         //file.getParentFile().mkdirs();

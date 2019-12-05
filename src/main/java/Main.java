@@ -14,6 +14,7 @@ public class Main {
 
         //collect data
         coll_list.test();
+        texts.test();
 
         System.out.println("done");
     }

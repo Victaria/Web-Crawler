@@ -114,7 +114,7 @@ public class coll_list{
                 cell = row.createCell(index++, CellType.BOOLEAN);
                 cell.setCellValue(c_comment);
 
-                //number comments --- TODO try over children §7
+                //number comments  §7
                 Elements c_ticker = doc.getElementsByClass("post-box-title");
                 int comment = 0;
                 for (Element e : c_ticker) {
@@ -159,10 +159,13 @@ public class coll_list{
         }
         // write out
         File file = new File(sheetname);
-
         FileOutputStream outFile = new FileOutputStream(file);
-        workbook.write(outFile);
-        System.out.println("file written: " + file.getAbsolutePath());
+        try {
+            workbook.write(outFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        //System.out.println("in file written(list): " + file.getAbsolutePath());
         is.close();
     }
 }
