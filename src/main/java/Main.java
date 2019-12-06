@@ -10,7 +10,7 @@ public class Main {
         prepairExcel.prepairExcel();
 
         //site, who there crawler should work
-        //crawl.test();
+        crawl.test();
 
         //collect data
         coll_list.test();
