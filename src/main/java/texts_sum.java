@@ -62,9 +62,8 @@ public class texts_sum {
                     }
                 }
                 cell = row.createCell(1, CellType.STRING);
-                for (int i = cache.size() - 1; i >= 0; i--){
-                    cell.setCellValue(cache.get(i).toString());
-                }
+                cell.setCellValue(cache.toString());
+
             } catch (Exception e) {
                 //e.printStackTrace();
             }
