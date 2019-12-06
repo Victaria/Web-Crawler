@@ -165,7 +165,7 @@ public class coll_list{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //System.out.println("in file written(list): " + file.getAbsolutePath());
+        System.out.println("in file written(all): " + file.getAbsolutePath());
         is.close();
     }
 }

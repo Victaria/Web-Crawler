@@ -16,8 +16,9 @@ public class prepairExcel {
         //create Excel
         HSSFWorkbook workbook = new HSSFWorkbook();
         //create sheet
-        HSSFSheet sheet = workbook.createSheet("all.xls");
-        HSSFSheet s2 = workbook.createSheet("p.xls");
+        HSSFSheet sheet = workbook.createSheet("all");
+        HSSFSheet s2 = workbook.createSheet("p_un");
+        HSSFSheet s3 = workbook.createSheet("p_sum");
 
         Cell cell;
         Row row;
@@ -47,7 +48,7 @@ public class prepairExcel {
         cell = row.createCell(9, CellType.STRING);
         cell.setCellValue("is a category");
 
-        //texts
+        //texts_un
         row = s2.createRow(0);
         cell = row.createCell(0, CellType.STRING);
         cell.setCellValue("URL");
@@ -56,6 +57,14 @@ public class prepairExcel {
             cell = row.createCell(i, CellType.STRING);
             cell.setCellValue("p" + i);
         }
+
+        //texts_sum
+        row = s3.createRow(0);
+        cell = row.createCell(0, CellType.STRING);
+        cell.setCellValue("URL");
+        cell = row.createCell(1, CellType.STRING);
+        cell.setCellValue("p");
+
 
         // write out
         File file = new File("data.xls");

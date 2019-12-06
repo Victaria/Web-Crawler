@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="up">
+      <change afterPath="$PROJECT_DIR$/src/main/java/texts_sum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/helper/getHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/getHTML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/texts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coll_list.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coll_list.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crawl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/prepairExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/prepairExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/texts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts_un.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,8 +150,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="texts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="texts" />
+    <configuration name="texts_un" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="texts_un" />
       <module name="Web-Crawler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +166,11 @@
       <item itemvalue="Application.chrome_crawler" />
       <item itemvalue="Application.crawl_iterative" />
       <item itemvalue="Application.coll_list" />
-      <item itemvalue="Application.texts" />
+      <item itemvalue="Application.texts_un" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.texts" />
+        <item itemvalue="Application.texts_un" />
         <item itemvalue="Application.coll_list" />
         <item itemvalue="Application.crawl_iterative" />
         <item itemvalue="Application.chrome_crawler" />
@@ -209,7 +213,9 @@
       <workItem from="1575469545725" duration="4673000" />
       <workItem from="1575479441104" duration="12238000" />
       <workItem from="1575534234931" duration="860000" />
-      <workItem from="1575574974284" duration="5749000" />
+      <workItem from="1575574974284" duration="6042000" />
+      <workItem from="1575651320075" duration="2933000" />
+      <workItem from="1575654275175" duration="539000" />
     </task>
     <task id="LOCAL-00001" summary="add branch library">
       <created>1574187599442</created>
@@ -421,7 +427,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575583168876</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="deactivate errors">
+      <created>1575584501831</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1575584501831</updated>
+    </task>
+    <task id="LOCAL-00032" summary="adjust prepair p">
+      <created>1575584753477</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1575584753477</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +482,9 @@
     <MESSAGE value="coll_list to analyse list of ULR`s" />
     <MESSAGE value="up" />
     <MESSAGE value="crawl texts" />
-    <option name="LAST_COMMIT_MESSAGE" value="crawl texts" />
+    <MESSAGE value="deactivate errors" />
+    <MESSAGE value="adjust prepair p" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust prepair p" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1575579539482">
@@ -481,54 +503,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="543" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575405438393" />
-    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1575584501432">
+    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1575584753099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="583" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584501432" />
+    <state x="583" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584753099" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1575479930586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575479930586" />
-    <state width="1877" height="220" key="GridCell.Tab.0.bottom" timestamp="1575584481275">
+    <state width="1877" height="220" key="GridCell.Tab.0.bottom" timestamp="1575654816674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584481275" />
-    <state width="1877" height="220" key="GridCell.Tab.0.center" timestamp="1575584481274">
+    <state width="1877" height="220" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575654816674" />
+    <state width="1877" height="220" key="GridCell.Tab.0.center" timestamp="1575654816674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584481274" />
-    <state width="1877" height="220" key="GridCell.Tab.0.left" timestamp="1575584481274">
+    <state width="1877" height="220" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575654816674" />
+    <state width="1877" height="220" key="GridCell.Tab.0.left" timestamp="1575654816674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584481274" />
-    <state width="1877" height="220" key="GridCell.Tab.0.right" timestamp="1575584481275">
+    <state width="1877" height="220" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575654816674" />
+    <state width="1877" height="220" key="GridCell.Tab.0.right" timestamp="1575654816674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584481275" />
-    <state width="1877" height="383" key="GridCell.Tab.1.bottom" timestamp="1575580824626">
+    <state width="1877" height="220" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575654816674" />
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom" timestamp="1575584775954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575580824626" />
-    <state width="1877" height="383" key="GridCell.Tab.1.center" timestamp="1575580824625">
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584775954" />
+    <state width="1877" height="383" key="GridCell.Tab.1.center" timestamp="1575584775954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575580824625" />
-    <state width="1877" height="383" key="GridCell.Tab.1.left" timestamp="1575580824625">
+    <state width="1877" height="383" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584775954" />
+    <state width="1877" height="383" key="GridCell.Tab.1.left" timestamp="1575584775954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575580824625" />
-    <state width="1877" height="383" key="GridCell.Tab.1.right" timestamp="1575580824626">
+    <state width="1877" height="383" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584775954" />
+    <state width="1877" height="383" key="GridCell.Tab.1.right" timestamp="1575584775954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575580824626" />
+    <state width="1877" height="383" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584775954" />
     <state x="807" y="428" key="VCS.ChangelistChooser" timestamp="1575402728455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="428" key="VCS.ChangelistChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575402728455" />
-    <state x="552" y="233" key="Vcs.Push.Dialog.v2" timestamp="1575584503410">
+    <state x="552" y="233" key="Vcs.Push.Dialog.v2" timestamp="1575584755306">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="233" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584503410" />
+    <state x="552" y="233" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575584755306" />
     <state x="767" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575491667528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -537,9 +559,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="extract.method.dialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575579995326" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575479893932">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575654358855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575479893932" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575654358855" />
   </component>
 </project>

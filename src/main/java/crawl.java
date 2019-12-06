@@ -27,8 +27,8 @@ public class crawl {
 
     public crawl(String site, String url, int depth){
         crawler(site, url, depth);
+        System.out.println("crawled URL´s: " + l.size());
 
-        //System.out.println("crawled URL´s: " + l.size());
         //output to file
         try {
             PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream("list.txt"), StandardCharsets.UTF_8));

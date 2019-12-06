@@ -15,7 +15,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class texts {
+public class texts_un {
     public static void main(String[] args) {
         try {
             test();
@@ -66,7 +66,7 @@ public class texts {
                 //exclude cookie text
                 index--;
                 cell = row.createCell(index, CellType.STRING);
-                cell.setCellValue("");
+                cell.setBlank();
             } catch (Exception e) {
                 //e.printStackTrace();
             }
@@ -79,7 +79,7 @@ public class texts {
         } catch (IOException e) {
             //e.printStackTrace();
         }
-        //System.out.println("in file written(p): " + file.getAbsolutePath());
+        System.out.println("in file written(p_un): " + file.getAbsolutePath());
         is.close();
     }
 }

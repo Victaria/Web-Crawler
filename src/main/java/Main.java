@@ -14,7 +14,8 @@ public class Main {
 
         //collect data
         coll_list.test();
-        texts.test();
+        texts_un.test();
+        texts_sum.test();
 
         System.out.println("done");
     }
