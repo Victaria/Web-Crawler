@@ -52,7 +52,6 @@ public class crawl {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println("list.txt created: " + l.size());
     }
 
 
