@@ -56,7 +56,6 @@ public class crawl {
     }
 
 
-
     //recursive crawler
     // Filtering soll unwichige Seiten herausnehmen
     // ungefähre Seitenanzahl: 1512
