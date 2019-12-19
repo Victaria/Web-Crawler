@@ -17,6 +17,7 @@ public class Main {
         Coll_list.test(file);
         Texts_un.test(file);
         Texts_sum.test(file);
+        Coll_date.test(file);
 
         System.out.println("done");
     }
