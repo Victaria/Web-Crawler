@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
-public class prepairExcel {
+public class Prepare_Excel {
 
     public static File prepairExcel() throws IOException {
         //create Excel
@@ -49,6 +49,8 @@ public class prepairExcel {
         cell.setCellValue("number of comments");
         cell = row.createCell(8, CellType.STRING);
         cell.setCellValue("number linked articles");
+        cell = row.createCell(9, CellType.STRING);
+        cell.setCellValue("is a category");
         cell = row.createCell(9, CellType.STRING);
         cell.setCellValue("is a category");
 

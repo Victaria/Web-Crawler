@@ -1,4 +1,4 @@
-import helper.getHTML;
+import helper.GetHTML;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -11,17 +11,17 @@ import org.jsoup.select.Elements;
 
 import java.io.*;
 
-public class coll_uniq {
+public class Coll_uniq {
     public static void main(String[] args) throws IOException {
         //test function
         String start_url = "https://www.travelontoast.de/tokio-tipps-sehenswuerdigkeiten/#Tokio_Tipps_zur_Reiseplanung";
-        coll_uniq analyse = new coll_uniq();
+        Coll_uniq analyse = new Coll_uniq();
         analyse.analyse(start_url, 1, "data.xls");
     }
 
     void analyse(String url, int index, String sheetname) throws IOException {
         //get html
-        String html = getHTML.getHTML(url);
+        String html = GetHTML.getHTML(url);
         Document doc = Jsoup.parse(html);
 
         //access excel

@@ -7,7 +7,7 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
-public class crawl {
+public class Crawl {
     private static int iteration = 0;
     //private HashSet<String> lh = new HashSet<String>();
     private static ArrayList l = new ArrayList();
@@ -21,11 +21,11 @@ public class crawl {
         String site = "https://www.travelontoast.de/";
         String url = site;
         int depth = 0;
-        new crawl(site, url, depth);
+        new Crawl(site, url, depth);
     }
 
 
-    public crawl(String site, String url, int depth){
+    public Crawl(String site, String url, int depth){
         crawler(site, url, depth);
         System.out.println("crawled URL´s: " + l.size());
 

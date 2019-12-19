@@ -3,12 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="414e6f32-b4c6-4274-99fd-507b667f119c" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/19.12.19.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Coll_date.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coll_list.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coll_list.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/helper/prepairExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/prepairExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/texts_sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts_sum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/texts_un.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/texts_un.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coll_list.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coll_list.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coll_uniq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Coll_uniq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Crawl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crawl_iterative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Crawl_iterative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/getHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/GetHTML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/prepairExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/Prepare_Excel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/texts_sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Texts_sum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/texts_un.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Texts_un.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +100,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Coll_list" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Coll_list" />
+      <module name="Web-Crawler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Crawl_iterative" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Crawl_iterative" />
+      <module name="Web-Crawler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Exctractor" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Extractor" />
       <module name="Web-Crawler" />
@@ -116,7 +136,14 @@
       </method>
     </configuration>
     <configuration name="Site" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="coll_uniq" />
+      <option name="MAIN_CLASS_NAME" value="Coll_uniq" />
+      <module name="Web-Crawler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Texts_un" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Texts_un" />
       <module name="Web-Crawler" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,27 +162,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="coll_list" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coll_list" />
-      <module name="Web-Crawler" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="crawl_iterative" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="crawl_iterative" />
-      <module name="Web-Crawler" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="texts_un" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="texts_un" />
-      <module name="Web-Crawler" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.BasicWebCrawler" />
       <item itemvalue="Application.Exctractor" />
@@ -163,15 +169,15 @@
       <item itemvalue="Application.Site" />
       <item itemvalue="Application.ReadExcelDemo" />
       <item itemvalue="Application.chrome_crawler" />
-      <item itemvalue="Application.crawl_iterative" />
-      <item itemvalue="Application.coll_list" />
-      <item itemvalue="Application.texts_un" />
+      <item itemvalue="Application.Coll_list" />
+      <item itemvalue="Application.Crawl_iterative" />
+      <item itemvalue="Application.Texts_un" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.texts_un" />
-        <item itemvalue="Application.coll_list" />
-        <item itemvalue="Application.crawl_iterative" />
+        <item itemvalue="Application.Texts_un" />
+        <item itemvalue="Application.Coll_list" />
+        <item itemvalue="Application.Crawl_iterative" />
         <item itemvalue="Application.chrome_crawler" />
         <item itemvalue="Application.ReadExcelDemo" />
       </list>
@@ -217,7 +223,7 @@
       <workItem from="1575654275175" duration="2445000" />
       <workItem from="1576788859674" duration="45000" />
       <workItem from="1576788921838" duration="125000" />
-      <workItem from="1576789062730" duration="1875000" />
+      <workItem from="1576789062730" duration="4324000" />
     </task>
     <task id="LOCAL-00001" summary="add branch library">
       <created>1574187599442</created>
@@ -478,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575658008756</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="ADD: name excel file by date">
+      <created>1576791117569</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1576791117569</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +536,8 @@
     <MESSAGE value="add new text_sum for all texts in one cell" />
     <MESSAGE value="finish" />
     <MESSAGE value="up" />
-    <option name="LAST_COMMIT_MESSAGE" value="up" />
+    <MESSAGE value="ADD: name excel file by date" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: name excel file by date" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1575579539482">
@@ -542,30 +556,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="543" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575405438393" />
-    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1575658008332">
+    <state x="583" y="28" key="CommitChangelistDialog2" timestamp="1576793414536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="583" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575658008332" />
+    <state x="583" y="28" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576793414536" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1575479930586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575479930586" />
-    <state width="1877" height="220" key="GridCell.Tab.0.bottom" timestamp="1576790941517">
+    <state width="1877" height="220" key="GridCell.Tab.0.bottom" timestamp="1576793499796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576790941517" />
-    <state width="1877" height="220" key="GridCell.Tab.0.center" timestamp="1576790941517">
+    <state width="1877" height="220" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576793499796" />
+    <state width="1877" height="220" key="GridCell.Tab.0.center" timestamp="1576793499796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576790941517" />
-    <state width="1877" height="220" key="GridCell.Tab.0.left" timestamp="1576790941517">
+    <state width="1877" height="220" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576793499796" />
+    <state width="1877" height="220" key="GridCell.Tab.0.left" timestamp="1576793499796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576790941517" />
-    <state width="1877" height="220" key="GridCell.Tab.0.right" timestamp="1576790941517">
+    <state width="1877" height="220" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576793499796" />
+    <state width="1877" height="220" key="GridCell.Tab.0.right" timestamp="1576793499796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576790941517" />
+    <state width="1877" height="220" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576793499796" />
     <state width="1877" height="383" key="GridCell.Tab.1.bottom" timestamp="1575584775954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -590,10 +604,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="428" key="VCS.ChangelistChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575402728455" />
-    <state x="552" y="233" key="Vcs.Push.Dialog.v2" timestamp="1575658010612">
+    <state x="552" y="233" key="Vcs.Push.Dialog.v2" timestamp="1576791123348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="233" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575658010612" />
+    <state x="552" y="233" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576791123348" />
     <state x="715" y="365" key="cloudConfig.PluginsDialog" timestamp="1576788989230">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -614,9 +628,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576788886151" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575654358855">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576792916944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575654358855" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576792916944" />
   </component>
 </project>

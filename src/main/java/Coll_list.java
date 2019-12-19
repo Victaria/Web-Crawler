@@ -1,4 +1,4 @@
-import helper.getHTML;
+import helper.GetHTML;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -14,12 +14,12 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
-public class coll_list{
+public class Coll_list {
     public static void main(String[] args){}
 
     public static void test(File sheetname) throws IOException {
-        ArrayList<String> l = coll_list.read("list.txt");
-        coll_list.coll(l, sheetname);
+        ArrayList<String> l = Coll_list.read("list.txt");
+        Coll_list.coll(l, sheetname);
     }
 
     public static ArrayList<String> read(String file){
@@ -49,7 +49,7 @@ public class coll_list{
 
             //get html
             try {
-                String html = getHTML.getHTML(url);
+                String html = GetHTML.getHTML(url);
                 Document doc = Jsoup.parse(html);
                 int index = 0;//Spalten
 

@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class getHTML {
+public class GetHTML {
 
-    public getHTML(String url) {
+    public GetHTML(String url) {
     }
 
     public static String getHTML(String url) {

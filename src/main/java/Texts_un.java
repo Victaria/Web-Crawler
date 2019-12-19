@@ -1,9 +1,8 @@
-import helper.getHTML;
+import helper.GetHTML;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
-import org.apache.poi.ss.usermodel.RichTextString;
 import org.apache.poi.ss.usermodel.Row;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -16,59 +15,63 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class texts_sum {
+public class Texts_un {
 
     public static void test(File sheetname) throws IOException {
-        p(coll_list.read("list.txt"), sheetname);
+        p(Coll_list.read("list.txt"), sheetname);
     }
 
-    public static void p(ArrayList<String> list, File sheetname) throws IOException {
+    public static void p(ArrayList <String> list, File sheetname) throws IOException {
         //access excel
         FileInputStream is = new FileInputStream(sheetname);
         HSSFWorkbook workbook = new HSSFWorkbook(is);
-        HSSFSheet s3 = workbook.getSheetAt(2);
+        HSSFSheet s2 = workbook.getSheetAt(1);
 
         Cell cell;
 
         //get URL to analyse
         for ( int entry = 1; entry <= list.size() - 1; entry++) {
-            Row row = s3.createRow(entry);
+            Row row = s2.createRow(entry);
             String url = list.get(entry);
 
             //get html
             try {
-                String html = getHTML.getHTML(url);
+                String html = GetHTML.getHTML(url);
                 Document doc = Jsoup.parse(html);
+                int index = 0;
 
                 //set Url in Excel §1
-                cell = row.createCell(0, CellType.STRING);
+                cell = row.createCell(index++, CellType.STRING);
                 cell.setCellValue(url);
 
                 //set texts §n
-                ArrayList<String> cache = new ArrayList<String>();
                 Elements p = doc.select("p");
+                int countp = 0;
                 for (Element e : p) {
                     if (!e.children().toString().contains("href")
                             && !e.children().toString().contains("span"))
                     {
-                        cache.add(e.text());
+                        //System.out.println(e.text());
+                        cell = row.createCell(index++, CellType.STRING);
+                        cell.setCellValue(e.text());
                     }
                 }
-                cell = row.createCell(1, CellType.STRING);
-                cell.setCellValue(cache.toString());
-
+                //exclude cookie text
+                index--;
+                cell = row.createCell(index, CellType.STRING);
+                cell.setBlank();
             } catch (Exception e) {
                 //e.printStackTrace();
             }
         }
-        // write out
+            // write out
         FileOutputStream outFile = new FileOutputStream(sheetname);
         try {
             workbook.write(outFile);
         } catch (IOException e) {
             //e.printStackTrace();
         }
-        System.out.println("in file written(p_sum): " + sheetname.getAbsolutePath());
+        System.out.println("in file written(p_un): " + sheetname.getAbsolutePath());
         is.close();
     }
 }
