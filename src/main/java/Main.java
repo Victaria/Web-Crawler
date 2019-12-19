@@ -1,5 +1,6 @@
 import helper.prepairExcel;
 
+import java.io.File;
 import java.io.IOException;
 
 public class Main {
@@ -7,15 +8,15 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         //prepare excel access
-        prepairExcel.prepairExcel();
+        File file = prepairExcel.prepairExcel();
 
         //site, who there crawler should work
-        crawl.test();
+        //crawl.test();
 
         //collect data
-        coll_list.test();
-        texts_un.test();
-        texts_sum.test();
+        coll_list.test(file);
+        texts_un.test(file);
+        texts_sum.test(file);
 
         System.out.println("done");
     }

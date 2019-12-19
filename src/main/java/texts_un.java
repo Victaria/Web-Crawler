@@ -16,19 +16,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class texts_un {
-    public static void main(String[] args) {
-        try {
-            test();
-        } catch (IOException e) {
-            //e.printStackTrace();
-        }
+
+    public static void test(File sheetname) throws IOException {
+        p(coll_list.read("list.txt"), sheetname);
     }
 
-    public static void test() throws IOException {
-        p(coll_list.read("list.txt"), "data.xls");
-    }
-
-    public static void p(ArrayList <String> list, String sheetname) throws IOException {
+    public static void p(ArrayList <String> list, File sheetname) throws IOException {
         //access excel
         FileInputStream is = new FileInputStream(sheetname);
         HSSFWorkbook workbook = new HSSFWorkbook(is);
@@ -72,14 +65,13 @@ public class texts_un {
             }
         }
             // write out
-        File file = new File(sheetname);
-        FileOutputStream outFile = new FileOutputStream(file);
+        FileOutputStream outFile = new FileOutputStream(sheetname);
         try {
             workbook.write(outFile);
         } catch (IOException e) {
             //e.printStackTrace();
         }
-        System.out.println("in file written(p_un): " + file.getAbsolutePath());
+        System.out.println("in file written(p_un): " + sheetname.getAbsolutePath());
         is.close();
     }
 }

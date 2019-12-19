@@ -17,9 +17,8 @@ import java.util.ArrayList;
 public class coll_list{
     public static void main(String[] args){}
 
-    public static void test() throws IOException {
+    public static void test(File sheetname) throws IOException {
         ArrayList<String> l = coll_list.read("list.txt");
-        String sheetname = "data.xls";
         coll_list.coll(l, sheetname);
     }
 
@@ -35,7 +34,7 @@ public class coll_list{
         return l;
     }
 
-    public static void coll (ArrayList<String> l, String sheetname) throws IOException{
+    public static void coll (ArrayList<String> l, File sheetname) throws IOException{
         //access excel
         FileInputStream is = new FileInputStream(sheetname);
         HSSFWorkbook workbook = new HSSFWorkbook(is);
@@ -158,14 +157,13 @@ public class coll_list{
             }
         }
         // write out
-        File file = new File(sheetname);
-        FileOutputStream outFile = new FileOutputStream(file);
+        FileOutputStream outFile = new FileOutputStream(sheetname);
         try {
             workbook.write(outFile);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("in file written(all): " + file.getAbsolutePath());
+        System.out.println("in file written(overview): " + sheetname.getAbsolutePath());
         is.close();
     }
 }

@@ -9,14 +9,18 @@ import org.apache.poi.ss.usermodel.Row;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class prepairExcel {
 
-    public static void prepairExcel() throws IOException {
+    public static File prepairExcel() throws IOException {
         //create Excel
         HSSFWorkbook workbook = new HSSFWorkbook();
         //create sheet
-        HSSFSheet sheet = workbook.createSheet("all");
+        HSSFSheet sheet = workbook.createSheet("overview");
         HSSFSheet s2 = workbook.createSheet("p_un");
         HSSFSheet s3 = workbook.createSheet("p_sum");
 
@@ -67,11 +71,15 @@ public class prepairExcel {
 
 
         // write out
-        File file = new File("data.xls");
+        LocalDate now = LocalDate.now();
+        DateTimeFormatter df = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+        //System.out.println(now.format(df));
+        File file = new File(now.format(df) + ".xls");
         //file.getParentFile().mkdirs();
 
         FileOutputStream outFile = new FileOutputStream(file);
         workbook.write(outFile);
         System.out.println("Created file: " + file.getAbsolutePath());
+        return file;
     }
 }
