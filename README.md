@@ -1,6 +1,12 @@
 # Web-Crawler
 Ein Web Crawler auf basis von Java, optimiert zur Analyse von Wordpress Webseiten.
 
+## Verwendung:
+Lege in der Crawl Klasse die zu untersuchende Webseite aus, starte dann die Main Methode.
+
+Um den Crawler zu begrenzen, kann die MAX_DEPTH heruntergesetzt werden
+-> Es wird nur ein Teil der Webseite gecrawlt.
+
 ## Derzeit verwendete Klassen
 #### 1. Main
 Startklasse
@@ -21,9 +27,10 @@ Speichert den Gesamten mit <"p"> gekennzeichneten text einer URl in eine Zelle
 Speichert das Datum der URL
 
 ## Hilfsklassen:
-####1. GetHTML:
+#### 1. GetHTML:
 Zieht das aktuelle HTML Dokument für eine URL
-####2. Prepare_Excel:
+
+#### 2. Prepare_Excel:
 legt das Excel Dokument an
 
 ## Nicht verwendete Klassen:

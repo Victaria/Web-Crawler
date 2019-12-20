@@ -14,8 +14,6 @@ public class Crawl {
     private static int MAX_DEPTH = 50000;
     private static boolean detector = false;
 
-    public void main(String[] args) {}
-
     //test function
     public static void test(){
         String site = "https://www.travelontoast.de/";
