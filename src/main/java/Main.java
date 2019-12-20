@@ -11,7 +11,7 @@ public class Main {
         File file = Prepare_Excel.prepairExcel();
 
         //site, who there crawler should work
-        //crawl.test();
+        Crawl.test();
 
         //collect data
         Coll_list.test(file);

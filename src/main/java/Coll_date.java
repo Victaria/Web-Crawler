@@ -26,44 +26,44 @@ public class Coll_date {
             //access excel
             FileInputStream is = new FileInputStream(sheetname);
             HSSFWorkbook workbook = new HSSFWorkbook(is);
-            HSSFSheet s2 = workbook.getSheetAt(1);
+            HSSFSheet s4 = workbook.getSheetAt(3);
 
             Cell cell;
+            int space = 1;
 
             //get URL to analyse
             for ( int entry = 1; entry <= list.size() - 1; entry++) {
-                Row row = s2.createRow(entry);
-                String url = list.get(entry);
 
+                String url = list.get(entry);
                 //get html
                 try {
                     String html = GetHTML.getHTML(url);
                     Document doc = Jsoup.parse(html);
-                    int index = 0;
 
-                    //set Url in Excel §1
-                    cell = row.createCell(index++, CellType.STRING);
-                    cell.setCellValue(url);
+                    Elements posts = doc.getElementsByClass("item-related");
+                    //System.out.println(posts.size());
 
-                    //set texts §n
-                    Elements p = doc.select("p");
-                    int countp = 0;
-                    for (Element e : p) {
-                        if (!e.children().toString().contains("href")
-                                && !e.children().toString().contains("span"))
-                        {
-                            //System.out.println(e.text());
-                            cell = row.createCell(index++, CellType.STRING);
-                            cell.setCellValue(e.text());
+                    //search for URL-Date reference's :set Url
+                    for (Element post : posts){
+                        for (Element i : post.children()){
+                            for (Element k : i.children()){
+
+                                Elements o = k.getElementsByAttribute("href");
+                                String w = (o.select("a").attr("href"));
+                                Row row = s4.createRow(space);
+
+                                cell = row.createCell(0, CellType.STRING);
+                                cell.setCellValue(w);
+
+                                //: set date
+                                //System.out.println(k.parent().lastElementSibling().text());
+                                cell = row.createCell(1, CellType.STRING);
+                                cell.setCellValue(k.parent().lastElementSibling().text());
+                            }
                         }
+                        space++;
                     }
-                    //exclude cookie text
-                    index--;
-                    cell = row.createCell(index, CellType.STRING);
-                    cell.setBlank();
-                } catch (Exception e) {
-                    //e.printStackTrace();
-                }
+                } catch (Exception ignored) { }
             }
             // write out
             FileOutputStream outFile = new FileOutputStream(sheetname);
